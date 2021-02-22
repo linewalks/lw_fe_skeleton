@@ -9,7 +9,7 @@ const About = () => (
       </Link>
     </div>
     <div>
-      <img src="img/img_profile_symbol_linewalks_sm.png" size="sm" alt="linewalks logo" />
+      <img src="img/img_profile_symbol_linewalks_sm.png" alt="linewalks logo" />
     </div>
   </>
 )

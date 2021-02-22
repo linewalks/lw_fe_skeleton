@@ -1,4 +1,5 @@
 import React from 'react'
+import { NextPage } from 'next'
 import styled from 'styled-components'
 import Button from '@components/Button'
 import Link from 'next/link'
@@ -18,8 +19,8 @@ const Anchor = styled.a`
     color: white;
   }
 `
-
-function Home() {
+// getInitialProps 사용시, import { NextPage } from 'next'로 사용하세요.
+const Home:NextPage = () => {
   return (
     <>
       <Title>Linewalks</Title>
@@ -35,5 +36,10 @@ function Home() {
     </>
   )
 }
+
+// Home.getInitialProps = async (ctx) => {
+//   // getInitialProps 로직 작성
+// }
+
 
 export default Home
