@@ -89,3 +89,16 @@ yarn build
   * test
     * jest 관련 설정은 jest.config.js에 필요시 추가
     * test 관련 프레임워크나 라이브러리 추가시 setupTests.js에 추가
+
+* Alias 설정 - jsconfig의 paths 내부에서 설정하면 된다
+```
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@components/*": ["components/*"],
+       여기에 경로를 추가해주세요
+    }
+  }
+}
+```
