@@ -21,7 +21,7 @@
 ├── .eslintrc.js
 ├── .gitignore
 ├── jest.config.js
-├── jsconfig.json
+├── tsconfig.json
 ├── package.json
 └── README.md
 
@@ -89,3 +89,17 @@ yarn build
   * test
     * jest 관련 설정은 jest.config.js에 필요시 추가
     * test 관련 프레임워크나 라이브러리 추가시 setupTests.js에 추가
+
+* Alias 설정 - tsconfig의 paths 내부에서 설정하면 된다
+```
+{
+  "compilerOptions": {
+    ...,
+    "baseUrl": ".",
+    "paths": {
+      "@components/*": ["components/*"],
+      새로운 Alias는 여기 추가해주세요
+    }
+  },
+}
+```
